@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "简历"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -9,56 +9,45 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+> 完整版 PDF 简历：[下载链接](/files/cv.pdf)（请把 PDF 放到 `files/cv.pdf`）
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+## 教育经历
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+- **xx大学** 硕士研究生（在读）
+  - 专业：待填写
+  - 实验室方向：低光图像增强
+- **xx大学** 本科
+  - 专业：待填写
+  - 毕业年份：待填写
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+## 实习经历
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+*3 段与强化学习运动控制方向相关，详见 [实习经历](/Xinhua-Cen/internships/)*
+
+- **实习 1**：公司名称，起止时间，主要工作
+- **实习 2**：公司名称，起止时间，主要工作
+- **实习 3**：公司名称，起止时间，主要工作
+
+## 项目经历
+
+*详见 [项目经历](/Xinhua-Cen/projects/)*
+
+- **项目 1**：一句话简介
+- **项目 2**：一句话简介
+
+## 研究兴趣
+
+- 强化学习与机器人运动控制
+- 低光图像增强
+- 机器人动力学与系统辨识
+
+## 技能
+
+- **编程语言**：Python（4 年经验）、待补充
+- **框架 / 库**：PyTorch、待补充
+- **工具**：Git、Linux、待补充
+- **语言**：中文（母语）、英语（待填写等级）
+
+## 荣誉与获奖
+
+- 待填写

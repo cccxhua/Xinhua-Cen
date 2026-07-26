@@ -25,3 +25,8 @@ package-lock.json
 # Personal notes (not part of the site)
 interview_review_notes.md
 interview_review_notes.pdf
+
+# Local-only media (videos not uploaded to GitHub — see internships.md for logic)
+media/**/*.mp4
+media/**/*.mov
+media/**/*.webm

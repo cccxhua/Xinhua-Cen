@@ -28,15 +28,15 @@ redirect_from:
   </a>
 </div>
 
-<object data="{{ cv_pdf }}"
-        type="application/pdf"
-        width="100%" height="900px"
-        style="border: 1px solid #ddd; border-radius: 4px;">
+<iframe src="{{ cv_pdf }}"
+        width="100%" height="85vh"
+        style="border: 1px solid #ddd; border-radius: 4px;
+               background: white; color-scheme: light;">
   <p style="padding: 20px; background: #f8f9fa; border-radius: 4px;">
     你的浏览器无法直接显示 PDF，请
     <a href="{{ cv_pdf }}">点击这里下载</a>查看。
   </p>
-</object>
+</iframe>
 
 ---
 

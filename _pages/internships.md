@@ -30,17 +30,59 @@ author_profile: true
 - **技术栈**：Python、待补充
 - **产出**：待填写
 
-### 演示视频
+### 演示：小跑步态（仿真 vs 实机）
 
-{% unless jekyll.environment == "production" %}
-<video width="640" controls>
-  <source src="{{ site.baseurl }}/media/internships/intern1_demo.mp4" type="video/mp4">
-</video>
-*（本地预览：完整 mp4）*
-{% else %}
-![实习 1 演示]({{ site.baseurl }}/media/internships/intern1_demo.gif)
-*（公开视图：GIF 预览）*
-{% endunless %}
+<div style="display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0;">
+  <div style="flex: 1; min-width: 280px;">
+    <p style="margin: 0 0 6px 0;"><strong>仿真</strong></p>
+    {% unless jekyll.environment == "production" %}
+    <video controls style="width: 100%; max-width: 100%;">
+      <source src="{{ site.baseurl }}/media/internships/intern1-smallrun-sim.mp4" type="video/mp4">
+    </video>
+    {% else %}
+    <img src="{{ site.baseurl }}/media/internships/intern1-smallrun-sim.gif"
+         alt="小跑步态-仿真" style="width: 100%;">
+    {% endunless %}
+  </div>
+  <div style="flex: 1; min-width: 280px;">
+    <p style="margin: 0 0 6px 0;"><strong>实机</strong></p>
+    {% unless jekyll.environment == "production" %}
+    <video controls style="width: 100%; max-width: 100%;">
+      <source src="{{ site.baseurl }}/media/internships/intern1-smallrun.mp4" type="video/mp4">
+    </video>
+    {% else %}
+    <img src="{{ site.baseurl }}/media/internships/intern1-smallrun.gif"
+         alt="小跑步态-实机" style="width: 100%;">
+    {% endunless %}
+  </div>
+</div>
+
+### 演示：楼梯任务（上楼 vs 下楼）
+
+<div style="display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0;">
+  <div style="flex: 1; min-width: 280px;">
+    <p style="margin: 0 0 6px 0;"><strong>上楼</strong></p>
+    {% unless jekyll.environment == "production" %}
+    <video controls style="width: 100%; max-width: 100%;">
+      <source src="{{ site.baseurl }}/media/internships/intern1-stair.mp4#t=24,27" type="video/mp4">
+    </video>
+    {% else %}
+    <img src="{{ site.baseurl }}/media/internships/intern1-upstair.gif"
+         alt="楼梯-上楼" style="width: 100%;">
+    {% endunless %}
+  </div>
+  <div style="flex: 1; min-width: 280px;">
+    <p style="margin: 0 0 6px 0;"><strong>下楼</strong></p>
+    {% unless jekyll.environment == "production" %}
+    <video controls style="width: 100%; max-width: 100%;">
+      <source src="{{ site.baseurl }}/media/internships/intern1-stair.mp4#t=15,18" type="video/mp4">
+    </video>
+    {% else %}
+    <img src="{{ site.baseurl }}/media/internships/intern1-downstair.gif"
+         alt="楼梯-下楼" style="width: 100%;">
+    {% endunless %}
+  </div>
+</div>
 
 ---
 
@@ -54,17 +96,72 @@ author_profile: true
 - **技术栈**：
 - **产出**：
 
-### 演示视频
+### 演示：机器狗
 
-{% unless jekyll.environment == "production" %}
-<video width="640" controls>
-  <source src="{{ site.baseurl }}/media/internships/intern2_demo.mp4" type="video/mp4">
-</video>
-*（本地预览：完整 mp4）*
-{% else %}
-![实习 2 演示]({{ site.baseurl }}/media/internships/intern2_demo.gif)
-*（公开视图：GIF 预览）*
-{% endunless %}
+<div style="display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0;">
+  <div style="flex: 1; min-width: 280px;">
+    <p style="margin: 0 0 6px 0;"><strong>演示 1</strong></p>
+    {% unless jekyll.environment == "production" %}
+    <video controls style="width: 100%; max-width: 100%;">
+      <source src="{{ site.baseurl }}/media/internships/intern2-dog1.mp4" type="video/mp4">
+    </video>
+    {% else %}
+    <img src="{{ site.baseurl }}/media/internships/intern2-dog1.gif"
+         alt="机器狗-演示1" style="width: 100%;">
+    {% endunless %}
+  </div>
+  <div style="flex: 1; min-width: 280px;">
+    <p style="margin: 0 0 6px 0;"><strong>抗扰动</strong></p>
+    {% unless jekyll.environment == "production" %}
+    <video controls style="width: 100%; max-width: 100%;">
+      <source src="{{ site.baseurl }}/media/internships/intern2-dogrobunst.mp4" type="video/mp4">
+    </video>
+    {% else %}
+    <img src="{{ site.baseurl }}/media/internships/intern2-dogrobunst.gif"
+         alt="机器狗-抗扰动" style="width: 100%;">
+    {% endunless %}
+  </div>
+</div>
+
+### 演示：腿部控制
+
+<div style="display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0;">
+  <div style="flex: 1; min-width: 280px;">
+    <p style="margin: 0 0 6px 0;"><strong>演示 1</strong></p>
+    {% unless jekyll.environment == "production" %}
+    <video controls style="width: 100%; max-width: 100%;">
+      <source src="{{ site.baseurl }}/media/internships/intern2-legs1.mp4" type="video/mp4">
+    </video>
+    {% else %}
+    <img src="{{ site.baseurl }}/media/internships/intern2-legs1.gif"
+         alt="腿部控制-演示1" style="width: 100%;">
+    {% endunless %}
+  </div>
+  <div style="flex: 1; min-width: 280px;">
+    <p style="margin: 0 0 6px 0;"><strong>演示 2</strong></p>
+    {% unless jekyll.environment == "production" %}
+    <video controls style="width: 100%; max-width: 100%;">
+      <source src="{{ site.baseurl }}/media/internships/intern2-legs2.mp4" type="video/mp4">
+    </video>
+    {% else %}
+    <img src="{{ site.baseurl }}/media/internships/intern2-legs2.gif"
+         alt="腿部控制-演示2" style="width: 100%;">
+    {% endunless %}
+  </div>
+</div>
+
+### 演示：乒乓球（仿真）
+
+<div style="max-width: 50%; min-width: 280px; margin: 16px 0;">
+  {% unless jekyll.environment == "production" %}
+  <video controls style="width: 100%;">
+    <source src="{{ site.baseurl }}/media/internships/intern2-pingpongsim.mp4" type="video/mp4">
+  </video>
+  {% else %}
+  <img src="{{ site.baseurl }}/media/internships/intern2-pingpongsim.gif"
+       alt="乒乓球-仿真" style="width: 100%;">
+  {% endunless %}
+</div>
 
 ---
 

@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-{% assign cv_pdf = "/media/cv/简历.docx.pdf" | prepend: site.baseurl %}
+{% assign cv_pdf = "/media/cv/resume.pdf" | prepend: site.baseurl %}
 
 <div style="margin-bottom: 16px;">
   <a href="{{ cv_pdf }}" download="岑欣华-简历.pdf"

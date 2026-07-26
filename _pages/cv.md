@@ -29,9 +29,10 @@ redirect_from:
 </div>
 
 <iframe src="{{ cv_pdf }}"
-        width="100%" height="85vh"
+        width="100%" height="1000"
         style="border: 1px solid #ddd; border-radius: 4px;
-               background: white; color-scheme: light;">
+               background: white; color-scheme: light;
+               min-height: 1000px;">
   <p style="padding: 20px; background: #f8f9fa; border-radius: 4px;">
     你的浏览器无法直接显示 PDF，请
     <a href="{{ cv_pdf }}">点击这里下载</a>查看。

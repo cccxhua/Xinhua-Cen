@@ -9,45 +9,39 @@ redirect_from:
 
 {% include base_path %}
 
-> 完整版 PDF 简历：[下载链接](/files/cv.pdf)（请把 PDF 放到 `files/cv.pdf`）
+{% assign cv_pdf = "/media/cv/简历.docx.pdf" | prepend: site.baseurl %}
 
-## 教育经历
+<div style="margin-bottom: 16px;">
+  <a href="{{ cv_pdf }}" download="岑欣华-简历.pdf"
+     style="display: inline-block; padding: 10px 20px;
+            background: #2c7cb0; color: white;
+            text-decoration: none; border-radius: 4px;
+            font-weight: 500;">
+    📥 下载 PDF 简历
+  </a>
+  <a href="{{ cv_pdf }}" target="_blank"
+     style="display: inline-block; padding: 10px 20px;
+            background: #6c757d; color: white;
+            text-decoration: none; border-radius: 4px;
+            font-weight: 500; margin-left: 8px;">
+    🔗 新标签页打开
+  </a>
+</div>
 
-- **xx大学** 硕士研究生（在读）
-  - 专业：待填写
-  - 实验室方向：低光图像增强
-- **xx大学** 本科
-  - 专业：待填写
-  - 毕业年份：待填写
+<object data="{{ cv_pdf }}"
+        type="application/pdf"
+        width="100%" height="900px"
+        style="border: 1px solid #ddd; border-radius: 4px;">
+  <p style="padding: 20px; background: #f8f9fa; border-radius: 4px;">
+    你的浏览器无法直接显示 PDF，请
+    <a href="{{ cv_pdf }}">点击这里下载</a>查看。
+  </p>
+</object>
 
-## 实习经历
+---
 
-*3 段与强化学习运动控制方向相关，详见 [实习经历](/Xinhua-Cen/internships/)*
+## 更多信息
 
-- **实习 1**：公司名称，起止时间，主要工作
-- **实习 2**：公司名称，起止时间，主要工作
-- **实习 3**：公司名称，起止时间，主要工作
-
-## 项目经历
-
-*详见 [项目经历](/Xinhua-Cen/projects/)*
-
-- **项目 1**：一句话简介
-- **项目 2**：一句话简介
-
-## 研究兴趣
-
-- 强化学习与机器人运动控制
-- 低光图像增强
-- 机器人动力学与系统辨识
-
-## 技能
-
-- **编程语言**：Python（4 年经验）、待补充
-- **框架 / 库**：PyTorch、待补充
-- **工具**：Git、Linux、待补充
-- **语言**：中文（母语）、英语（待填写等级）
-
-## 荣誉与获奖
-
-- 待填写
+- 详细教育经历：[/education/]({{ site.baseurl }}/education/)
+- 详细实习经历：[/internships/]({{ site.baseurl }}/internships/)
+- 详细项目经历：[/projects/]({{ site.baseurl }}/projects/)

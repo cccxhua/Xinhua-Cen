@@ -175,17 +175,43 @@ author_profile: true
 - **技术栈**：
 - **产出**：
 
-### 演示视频
+### 演示
 
-{% unless jekyll.environment == "production" %}
-<video width="640" controls>
-  <source src="{{ site.baseurl }}/media/internships/intern3_demo.mp4" type="video/mp4">
-</video>
-*（本地预览：完整 mp4）*
-{% else %}
-![实习 3 演示]({{ site.baseurl }}/media/internships/intern3_demo.gif)
-*（公开视图：GIF 预览）*
-{% endunless %}
+<div style="display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0;">
+  <div style="flex: 1; min-width: 260px;">
+    <p style="margin: 0 0 6px 0;"><strong>搬箱</strong></p>
+    {% unless jekyll.environment == "production" %}
+    <video controls style="width: 100%; max-width: 100%;">
+      <source src="{{ site.baseurl }}/media/internships/intern3-carrybox.mp4" type="video/mp4">
+    </video>
+    {% else %}
+    <img src="{{ site.baseurl }}/media/internships/intern3-carrybox.gif"
+         alt="搬箱" style="width: 100%;">
+    {% endunless %}
+  </div>
+  <div style="flex: 1; min-width: 260px;">
+    <p style="margin: 0 0 6px 0;"><strong>动作重定向</strong></p>
+    {% unless jekyll.environment == "production" %}
+    <video controls style="width: 100%; max-width: 100%;">
+      <source src="{{ site.baseurl }}/media/internships/intern3-retarget.mp4" type="video/mp4">
+    </video>
+    {% else %}
+    <img src="{{ site.baseurl }}/media/internships/intern3-retarget.gif"
+         alt="动作重定向" style="width: 100%;">
+    {% endunless %}
+  </div>
+  <div style="flex: 1; min-width: 260px;">
+    <p style="margin: 0 0 6px 0;"><strong>走跑步态</strong></p>
+    {% unless jekyll.environment == "production" %}
+    <video controls style="width: 100%; max-width: 100%;">
+      <source src="{{ site.baseurl }}/media/internships/intern3-walkrun.mp4" type="video/mp4">
+    </video>
+    {% else %}
+    <img src="{{ site.baseurl }}/media/internships/intern3-walkrun.gif"
+         alt="走跑步态" style="width: 100%;">
+    {% endunless %}
+  </div>
+</div>
 
 <!--
 ======================================================================

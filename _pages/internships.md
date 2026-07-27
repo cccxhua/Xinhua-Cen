@@ -18,11 +18,9 @@ author_profile: true
 
 ---
 
-## 实习 1：待填写
+## 实习 1：桥介数物（深圳）科技有限公司-强化学习算法实习生 软件部
 
-- **公司 / 机构**：
-- **时间**：
-- **岗位 / 团队**：
+
 - **技术栈**：Python、PyTorch、Isaac Gym / Isaac Lab、MuJoCo、Gazebo、ROS、URDF / MJCF、PPO
 
 ### 核心目标
@@ -51,7 +49,6 @@ author_profile: true
 - 课程学习：命令幅度由小到大、地形难度阶梯递进
 - 实现四足 / 人形机器人**稳定行走、盲爬楼梯**
 
-#### 演示：小跑步态（仿真 vs 实机）
 
 <div style="display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0;">
   <div style="flex: 1; min-width: 280px;">
@@ -78,7 +75,6 @@ author_profile: true
   </div>
 </div>
 
-#### 演示：楼梯任务（上楼 vs 下楼）
 
 <div style="display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0;">
   <div style="flex: 1; min-width: 280px;">
@@ -106,11 +102,8 @@ author_profile: true
 </div>
 
 
-## 实习 2：待填写
+## 实习 2：卧安机器人（深圳）股份有限公司-算法实习生 产品研发部
 
-- **公司 / 机构**：
-- **时间**：
-- **岗位 / 团队**：
 - **技术栈**：Python、Isaac Lab、URDF / MJCF、域随机化、课程学习、PPO
 
 ### 自研机器狗的训练与部署
@@ -191,12 +184,9 @@ author_profile: true
 
 ---
 
-## 实习 3：待填写
+## 实习 3：智元创新（上海）科技股份有限公司-强化学习算法实习生 中央研发部
 
-- **公司 / 机构**：
-- **时间**：
-- **岗位 / 团队**：
-- **技术栈**：Python、GMR、AMP、Isaac Lab、双目立体视觉
+- **技术栈**：Python、GMR、AMP、Isaac Lab
 
 ### 机器人走跑训练优化
 

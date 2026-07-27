@@ -11,9 +11,8 @@ author_profile: true
 🎬 关于视频演示的说明：
 - 本地预览（`docker compose up`）时会显示 mp4 视频
 - 部署到 GitHub Pages 时只显示 gif（因为 mp4 已被 .gitignore 屏蔽）
-- 要在网页上真正显示 GIF，需要把对应的 .gif 文件放到 media/internships/
-  （用 ffmpeg 或在线工具从 mp4 生成）
-- 文件名建议改成有意义的名字，例如 intern1_walking.mp4 / intern1_walking.gif
+- 竖屏 GIF 在这里用固定像素宽度（约 220px）呈现，避免比例过大
+- 单独居中的 GIF（乒乓球、动作重定向）用 max-width 520px
 ======================================================================
 -->
 
@@ -96,13 +95,13 @@ author_profile: true
 - **技术栈**：
 - **产出**：
 
-### 演示：机器狗
+### 演示：机器狗（竖屏，缩小并排展示）
 
-<div style="display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0;">
-  <div style="flex: 1; min-width: 280px;">
-    <p style="margin: 0 0 6px 0;"><strong>演示 1</strong></p>
+<div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin: 16px 0;">
+  <div style="width: 220px;">
+    <p style="margin: 0 0 6px 0; text-align: center;"><strong>演示 1</strong></p>
     {% unless jekyll.environment == "production" %}
-    <video controls style="width: 100%; max-width: 100%;">
+    <video controls style="width: 100%;">
       <source src="{{ site.baseurl }}/media/internships/intern2-dog1.mp4" type="video/mp4">
     </video>
     {% else %}
@@ -110,10 +109,10 @@ author_profile: true
          alt="机器狗-演示1" style="width: 100%;">
     {% endunless %}
   </div>
-  <div style="flex: 1; min-width: 280px;">
-    <p style="margin: 0 0 6px 0;"><strong>抗扰动</strong></p>
+  <div style="width: 220px;">
+    <p style="margin: 0 0 6px 0; text-align: center;"><strong>抗扰动</strong></p>
     {% unless jekyll.environment == "production" %}
-    <video controls style="width: 100%; max-width: 100%;">
+    <video controls style="width: 100%;">
       <source src="{{ site.baseurl }}/media/internships/intern2-dogrobunst.mp4" type="video/mp4">
     </video>
     {% else %}
@@ -123,36 +122,9 @@ author_profile: true
   </div>
 </div>
 
-### 演示：腿部控制
-
-<div style="display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0;">
-  <div style="flex: 1; min-width: 280px;">
-    <p style="margin: 0 0 6px 0;"><strong>演示 1</strong></p>
-    {% unless jekyll.environment == "production" %}
-    <video controls style="width: 100%; max-width: 100%;">
-      <source src="{{ site.baseurl }}/media/internships/intern2-legs1.mp4" type="video/mp4">
-    </video>
-    {% else %}
-    <img src="{{ site.baseurl }}/media/internships/intern2-legs1.gif"
-         alt="腿部控制-演示1" style="width: 100%;">
-    {% endunless %}
-  </div>
-  <div style="flex: 1; min-width: 280px;">
-    <p style="margin: 0 0 6px 0;"><strong>演示 2</strong></p>
-    {% unless jekyll.environment == "production" %}
-    <video controls style="width: 100%; max-width: 100%;">
-      <source src="{{ site.baseurl }}/media/internships/intern2-legs2.mp4" type="video/mp4">
-    </video>
-    {% else %}
-    <img src="{{ site.baseurl }}/media/internships/intern2-legs2.gif"
-         alt="腿部控制-演示2" style="width: 100%;">
-    {% endunless %}
-  </div>
-</div>
-
 ### 演示：乒乓球（仿真）
 
-<div style="max-width: 50%; min-width: 280px; margin: 16px 0;">
+<div style="max-width: 520px; margin: 16px auto; text-align: center;">
   {% unless jekyll.environment == "production" %}
   <video controls style="width: 100%;">
     <source src="{{ site.baseurl }}/media/internships/intern2-pingpongsim.mp4" type="video/mp4">
@@ -161,6 +133,12 @@ author_profile: true
   <img src="{{ site.baseurl }}/media/internships/intern2-pingpongsim.gif"
        alt="乒乓球-仿真" style="width: 100%;">
   {% endunless %}
+  <p style="margin-top: 10px; font-size: 0.95em;">
+    源码：<a href="https://github.com/cccxhua/PPO-pingpong/tree/a1-tabletennis"
+              target="_blank" rel="noopener">
+      cccxhua/PPO-pingpong · a1-tabletennis
+    </a>
+  </p>
 </div>
 
 ---
@@ -175,13 +153,26 @@ author_profile: true
 - **技术栈**：
 - **产出**：
 
-### 演示
+### 演示：动作重定向
 
-<div style="display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0;">
-  <div style="flex: 1; min-width: 260px;">
-    <p style="margin: 0 0 6px 0;"><strong>搬箱</strong></p>
+<div style="max-width: 520px; margin: 16px auto; text-align: center;">
+  {% unless jekyll.environment == "production" %}
+  <video controls style="width: 100%;">
+    <source src="{{ site.baseurl }}/media/internships/intern3-retarget.mp4" type="video/mp4">
+  </video>
+  {% else %}
+  <img src="{{ site.baseurl }}/media/internships/intern3-retarget.gif"
+       alt="动作重定向" style="width: 100%;">
+  {% endunless %}
+</div>
+
+### 演示：搬箱 & 走跑步态（竖屏，缩小并排展示）
+
+<div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin: 16px 0;">
+  <div style="width: 220px;">
+    <p style="margin: 0 0 6px 0; text-align: center;"><strong>搬箱</strong></p>
     {% unless jekyll.environment == "production" %}
-    <video controls style="width: 100%; max-width: 100%;">
+    <video controls style="width: 100%;">
       <source src="{{ site.baseurl }}/media/internships/intern3-carrybox.mp4" type="video/mp4">
     </video>
     {% else %}
@@ -189,21 +180,10 @@ author_profile: true
          alt="搬箱" style="width: 100%;">
     {% endunless %}
   </div>
-  <div style="flex: 1; min-width: 260px;">
-    <p style="margin: 0 0 6px 0;"><strong>动作重定向</strong></p>
+  <div style="width: 220px;">
+    <p style="margin: 0 0 6px 0; text-align: center;"><strong>走跑步态</strong></p>
     {% unless jekyll.environment == "production" %}
-    <video controls style="width: 100%; max-width: 100%;">
-      <source src="{{ site.baseurl }}/media/internships/intern3-retarget.mp4" type="video/mp4">
-    </video>
-    {% else %}
-    <img src="{{ site.baseurl }}/media/internships/intern3-retarget.gif"
-         alt="动作重定向" style="width: 100%;">
-    {% endunless %}
-  </div>
-  <div style="flex: 1; min-width: 260px;">
-    <p style="margin: 0 0 6px 0;"><strong>走跑步态</strong></p>
-    {% unless jekyll.environment == "production" %}
-    <video controls style="width: 100%; max-width: 100%;">
+    <video controls style="width: 100%;">
       <source src="{{ site.baseurl }}/media/internships/intern3-walkrun.mp4" type="video/mp4">
     </video>
     {% else %}
@@ -212,17 +192,3 @@ author_profile: true
     {% endunless %}
   </div>
 </div>
-
-<!--
-======================================================================
-🔧 添加更多视频的模板（复制粘贴即可）：
-
-{% unless jekyll.environment == "production" %}
-<video width="640" controls>
-  <source src="{{ site.baseurl }}/media/internships/你的视频名.mp4" type="video/mp4">
-</video>
-{% else %}
-![说明]({{ site.baseurl }}/media/internships/你的视频名.gif)
-{% endunless %}
-======================================================================
--->

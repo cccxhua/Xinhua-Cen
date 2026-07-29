@@ -194,17 +194,6 @@ author_profile: true
 - **AMP 训练闭环**：将 retargeted motion 稳定接入 **AMP** 训练，判别器 + 任务奖励并行更新
 - **成果**：显著改善**走跑运动的自然度与稳定性**，为后续高层控制任务提供**稳定、高效、鲁棒**的底层运动控制方案
 
-<div style="max-width: 520px; margin: 16px auto; text-align: center;">
-  <p style="margin: 0 0 6px 0;"><strong>动作重定向</strong></p>
-  {% unless jekyll.environment == "production" %}
-  <video controls style="width: 100%;">
-    <source src="{{ site.baseurl }}/media/internships/intern3-retarget.mp4" type="video/mp4">
-  </video>
-  {% else %}
-  <img src="{{ site.baseurl }}/media/internships/intern3-retarget.gif"
-       alt="动作重定向" style="width: 100%;">
-  {% endunless %}
-</div>
 
 <div style="width: 220px; margin: 16px auto; text-align: center;">
   <p style="margin: 0 0 6px 0;"><strong>走跑步态</strong></p>
